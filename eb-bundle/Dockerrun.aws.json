@@ -1,0 +1,14 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "listmonk/listmonk:v5.0.3",
+    "Update": "true"
+  },
+  "Ports": [
+    { "ContainerPort": "9000" }
+  ],
+  "Command": "./listmonk --config=",
+  "Environment": [
+    { "Name": "LISTMONK_app__address", "Value": "0.0.0.0:9000" }
+  ]
+}

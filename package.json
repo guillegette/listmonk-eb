@@ -1,0 +1,20 @@
+{
+  "name": "listmonk-eb",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "cdk": "cdk",
+    "synth": "cdk synth --region us-east-1",
+    "deploy": "cdk deploy --all --require-approval never --region us-east-1",
+    "diff": "cdk diff --region us-east-1",
+    "destroy": "cdk destroy --force --region us-east-1"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.212.0",
+    "constructs": "^10.4.2"
+  },
+  "devDependencies": {
+    "aws-cdk": "^2.1026.0"
+  }
+}
